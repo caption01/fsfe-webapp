@@ -5,7 +5,7 @@ app.get("/", (req, res) => {
   res.send("Hello Bom");
 });
 
-app.get("/demo", () => {
+app.get("/demo", (req, res) => {
   res
     .status(418)
     .set("X-full-stack", "4life")
